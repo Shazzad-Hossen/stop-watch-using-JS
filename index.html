@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Stop Waqtch by Shazzad</title>
+
+</head>
+
+<body class="flex justify-center items-center h-screen flex-col gap-36">
+    <h1 class="font-extrabold text-5xl">STOP WATCH</h1>
+
+    <div class="w-96 h-64 border-2 border-neutral-300 rounded-xl flex justify-center items-center flex-col gap-14">
+
+        <div class="flex justify-center items-center">
+            <p id="hour" class="font-bold text-5xl">00</p>
+            <p class="font-bold text-5xl">:</p>
+            <p id="min" class="font-bold text-5xl">00</p>
+            <p class="font-bold text-5xl">:</p>
+            <p id="sec" class="font-bold text-5xl">00</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-2">
+            <button onclick="start()" class="bg-lime-600 p-2 w-20 rounded-md">Start</button>
+            <button onclick="stop()" class="bg-red-700 p-2 w-20 rounded-md">Stop</button>
+            <button onclick="reset()" class="bg-sky-600 p-2 w-20 rounded-md">Reset</button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
